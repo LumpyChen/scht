@@ -1,4 +1,4 @@
-(function($){
+module.exports = function(){
 	$(document).ready(function(){
 		
 		$(".banner-image").backstretch("images/6.jpg"); 
@@ -74,4 +74,4 @@
 		}
 
 	}); // End document ready
-})(this.jQuery);
+};

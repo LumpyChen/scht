@@ -1,0 +1,30 @@
+{
+  "name": "scht",
+  "version": "1.0.0",
+  "description": "The demo of stock calculate and forecast service website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "scht"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LumpyChen/scht.git"
+  },
+  "keywords": [
+    "股票",
+    "金融",
+    "服务",
+    "预测"
+  ],
+  "author": "Lumpy Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LumpyChen/scht/issues"
+  },
+  "homepage": "https://github.com/LumpyChen/scht#readme",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7"
+  }
+}
