@@ -54,7 +54,7 @@ module.exports = function(){
 				var $this = $(this),
 				animationEffect = $this.attr("data-animation-effect");
 				if(Modernizr.mq('only all and (min-width: 768px)') && Modernizr.csstransitions) {
-					$this.appear(function() {
+					$this.show(function() {
 						setTimeout(function() {
 							$this.addClass('animated object-visible ' + animationEffect);
 						}, 400);

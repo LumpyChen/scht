@@ -1,7 +1,8 @@
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-csstransitions-touch-shiv-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
  */
-window.Modernizr = function(a, b, c) {
+module.exports=function(){
+	window.Modernizr = function(a, b, c) {
 		function A(a) {
 			j.cssText = a
 		}
@@ -368,3 +369,4 @@ window.Modernizr = function(a, b, c) {
 	}(this, document), Modernizr.load = function() {
 		yepnope.apply(window, [].slice.call(arguments, 0))
 	};
+};

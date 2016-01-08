@@ -101,7 +101,7 @@ img {
 }
 .banner-caption {
 	position: absolute;
-	top: 32%;
+	top: 25%;
 	width: 100%;
 	z-index: 2;
 }
