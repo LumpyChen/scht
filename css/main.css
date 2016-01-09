@@ -176,7 +176,7 @@ img {
 	color: #ffffff;
 	padding: 10px 20px;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: bolder;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
