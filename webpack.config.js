@@ -1,8 +1,6 @@
 /**
  * Created by Lumpychen on 16/1/9.
  */
-    var path = require('path');
-
 
 module.exports = {
 
@@ -16,8 +14,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
+            { test: /\.(css)$/, loader: 'style-loader!css-loader' },
+            { test: /\.less/, loader: 'style-loader!css-loader!less-loader'},
             { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]
     }

@@ -1,0 +1,133 @@
+html,
+body {
+  font-family: '微软雅黑', Tahoma;
+  height: 100%;
+  font-size: 15px;
+  line-height: 1.50;
+  color: #ffffff;
+  background-color: #ffffff;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h6 {
+  font-weight: 700;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+  color: #339BEB;
+}
+.text-colored {
+  color: #AB3B3A;
+}
+a {
+  color: #AB3B3A;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+.large {
+  font-size: 18px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Navigations
+----------------------------------------------------------------------------- */
+.header {
+  width: 100%;
+  overflow: hidden;
+  background: #AB3B3A;
+}
+.header .navbar {
+  margin-bottom: 0;
+  background: #AB3B3A;
+}
+.main-navigation .navbar-default {
+  border: none;
+}
+.main-navigation .navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.main-navigation .navbar-default .navbar-nav > li.active > a {
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.main-navigation .navbar-default .navbar-nav > li > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 768px) {
+  .main-navigation .navbar-default .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    background-color: #AB3B3A;
+  }
+  .main-navigation .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-nav {
+    float: left !important;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    background-color: #AB3B3A;
+  }
+  .header.navbar-fixed-top {
+    position: absolute;
+  }
+}
+.navbar-nav li {
+  line-height: 80px;
+}
+.logo {
+  height: 80px;
+  margin-top: 5px;
+}
