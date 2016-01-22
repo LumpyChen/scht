@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3a472bb-2a83-44f6-b5d4-d654803edc05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Stock_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/solution.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/stock.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/fill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/set.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/sync2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solution.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stocklist2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/scht.png" afterPath="$PROJECT_DIR$/images/scht.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/scht.psd" afterPath="$PROJECT_DIR$/images/scht.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Stock前端稿.iml" afterPath="$PROJECT_DIR$/.idea/Stock前端稿.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/bundle.js" afterPath="$PROJECT_DIR$/build/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Stocklist.css" afterPath="$PROJECT_DIR$/css/Stocklist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Stocklist.less" afterPath="$PROJECT_DIR$/css/Stocklist.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.less" afterPath="$PROJECT_DIR$/css/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stocklist.html" afterPath="$PROJECT_DIR$/stocklist.html" />
     </list>
     <ignored path="Stock前端稿.iws" />
     <ignored path=".idea/workspace.xml" />
