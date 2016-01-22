@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>股票列表</title>
+    <meta name="description" content="">
+    <meta name="author" content="Ryan qu,Lumpy Chen">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="Ryan qu,Lumpy Chen">
+    <!-- Self Adaption -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+    <!--[if lt ie 9]>
+        <script src="http://oss.maxcdn/libs/html5shiv/3.7.0/html5shiv.js>"
+        <script src="http://oss.maxcdn/libs/respond.js/1.4.2/respond.min.js">
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <!--<link href="bootstrap/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Font Awesome CSS -->
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/stocklist.css">
+
+</head>
+<body>
+<!-- header start -->
+<header class="header cf">
+
+
+    <div class="logo" >
+
+        <a href="index.html">
+            <img src="images/scht.png" alt="">
+        </a>
+
+    </div>
+
+
+
+    <div class="login">
+        <div class="search">
+            <input type="text" class="form-control" placeholder="请输入股票序号/简称"><button type="button"><i class="fa fa-search"></i></button>
+        </div>
+        <ul class="login-right cf">
+
+            <li><a href="#">登陆&nbsp;<i class="fa fa-user"></i> </a></li>
+            <li><a href="#">注册&nbsp;<i class="fa fa-users"></i> </a></li>
+
+        </ul>
+
+    </div>
+
+</header>
+<!-- header end -->
+
+
+<!-- title begin -->
+<div class="title-set">
+    <div class="title-bg">
+        <div class="title-name">
+            股票列表&nbsp;<i class="fa fa-list"></i>
+        </div>
+    </div>
+</div>
+<!-- title end -->
+
+<!-- tab begin-->
+<div class="tab-wrap">
+    <div class="tab-contain">
+        <ul class="cf" id="tab-select">
+            <li id="proof-intro">请选择股票分类依据:</li>
+            <li class="active">首字母&nbsp;<i class="fa fa-sort-alpha-asc"></i><div class="pset"></div></li>
+            <li>类别&nbsp;<i class="fa fa-tags"></i><div class="pset" style="background-color: #ffffff"></div></li>
+            <li>序号&nbsp;<i class="fa fa-sort-numeric-asc"></i><div class="pset" style="background-color: #ffffff"></div></li>
+            <li>地区&nbsp;<i class="fa fa-map-marker"></i><div class="pset" style="background-color: #ffffff"></div></li>
+        </ul>
+    </div>
+    <div class="tab-placeholder">
+        <div class="tab-detail show" id="dt1">
+            <div class="tab-class cf">
+                <!-- loop 1 begin -->
+                <li id="class1">A</li>
+                <li id="class2">B</li>
+                <li id="class3">C</li>
+                <li id="class4">D</li>
+                <li id="class5">E</li>
+                <li id="class6">F</li>
+                <li id="class7">G</li>
+                <li id="class8">H</li>
+                <li id="class9">I</li>
+                <li id="class10">J</li>
+                <li id="class11">K</li>
+                <li id="class12">L</li>
+                <li id="class13">M</li>
+                <li id="class14">N</li>
+                <li id="class15">O</li>
+                <li id="class16">P</li>
+                <li id="class17">Q</li>
+                <li id="class18">R</li>
+                <li id="class19">S</li>
+                <li id="class20">T</li>
+                <li id="class21">U</li>
+                <li id="class22">V</li>
+                <li id="class23">W</li>
+                <li id="class24">X</li>
+                <li id="class25">Y</li>
+                <li id="class26">Z</li>
+                <!-- loop 1 end -->
+            </div>
+        </div>
+
+        <div class="tab-detail" id="dt2">
+            按类别分类
+
+        </div>
+        <div class="tab-detail" id="dt3">
+            按数字序号
+
+        </div>
+        <div class="tab-detail" id="dt4">
+            按地区分类
+
+        </div>
+    </div>
+</div>
+<!-- tab end -->
+
+<!--content begin-->
+
+<div class="content-wrap">
+    <div class="content-name">
+        <h3>首字母为A的证券如下:</h3>
+    </div>
+    <ul class="content-row cf">
+        <li class="stock_id">序号</li>
+        <li class="stock_code">证券代码</li>
+        <li class="basic_place">证券地区</li>
+        <li class="stock_name">证券简称</li>
+
+    </ul>
+
+    <!-- loop 2 begin -->
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10001</li>
+        <li class="stock_code">600220</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="/stock.html">现代制药</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10002</li>
+        <li class="stock_code">600220</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">雷鸣科化</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10003</li>
+        <li class="stock_code">600985</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">中国天楹</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10004</li>
+        <li class="stock_code">000035</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">国药一致</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10005</li>
+        <li class="stock_code">000028</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">天和防务</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10006</li>
+        <li class="stock_code">300397</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">丰林集团</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10007</li>
+        <li class="stock_code">601996</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">长方照明</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10008</li>
+        <li class="stock_code">300301</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">玉龙股份</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10009</li>
+        <li class="stock_code">601028</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">中华企业</a></li>
+    </ul>
+    <ul class="content-row content-body cf">
+        <li class="stock_id">10010</li>
+        <li class="stock_code">600675</li>
+        <li class="basic_place">上海</li>
+        <li class="stock_name"><a href="">方正科技</a></li>
+    </ul>
+
+    <!-- loop 2 end -->
+</div>
+
+<!--content end-->
+<!-- footer begin -->
+<div class="banner-caption-foot">
+    <div class="footer cf">
+        <ul class="ft-left cf">
+            <li><a href="">常见问题</a></li>
+            <li>|</li>
+            <li><a href="">关于</a></li>
+            <li>|</li>
+            <li><a href="stocklist2.html">股票列表</a></li>
+        </ul>
+
+
+        <ul class="ft-right cf">
+            <li><a href="">版权信息</a></li>
+            <li>|</li>
+            <li><a href="">备案信息</a></li>
+        </ul>
+    </div>
+</div>
+<!-- footer end -->
+<script src="libs/jquery.min.js"></script>
+<script src="script/tab.js"></script>
+<script src="script/set.js"></script>
+
+</body>
+</html>

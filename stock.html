@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>现代制药</title>
+    <meta name="description" content="">
+    <meta name="author" content="Ryan qu,Lumpy Chen">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="Ryan qu,Lumpy Chen">
+    <!-- Self Adaption -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+    <!--[if lt ie 9]>
+        <script src="http://oss.maxcdn/libs/html5shiv/3.7.0/html5shiv.js>"
+        <script src="http://oss.maxcdn/libs/respond.js/1.4.2/respond.min.js">
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <!--<link href="bootstrap/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Font Awesome CSS -->
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/stock.css">
+
+    <link href="css/basic.css" type="text/css" rel="stylesheet" />
+    <link href="css/visualize.css" type="text/css" rel="stylesheet" />
+    <link href="css/visualize-dark.css" type="text/css" rel="stylesheet" />
+
+    <script src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/excanvas.js"></script>
+    <script type="text/javascript" src="js/visualize.jQuery.js"></script>
+    <script type="text/javascript" src="script/fill.js"></script>
+    <!--<script type="text/javascript" src="script/chart-fill.js"></script>-->
+
+
+</head>
+<body>
+<div class="buddle">
+    <!-- header start -->
+    <header class="header cf">
+
+        <div class="logo" >
+
+            <a href="index.html">
+                <img src="images/scht.png" alt="">
+            </a>
+
+        </div>
+
+
+
+        <div class="login">
+            <div class="search">
+                <input type="text" class="form-control" placeholder="请输入股票序号/简称"><button type="button"><i class="fa fa-search"></i></button>
+            </div>
+            <ul class="login-right cf">
+
+                <li><a href="#">登陆&nbsp;<i class="fa fa-user"></i> </a></li>
+                <li><a href="#">注册&nbsp;<i class="fa fa-users"></i> </a></li>
+
+            </ul>
+
+        </div>
+
+    </header>
+    <!-- header end -->
+
+
+    <!-- title begin -->
+    <div class="title-set">
+        <div class="title-bg">
+            <div class="title-name">
+                现代制药&nbsp;<i class="fa fa-line-chart"></i>
+            </div>
+        </div>
+    </div>
+    <!-- title end -->
+
+    <!-- basic begin -->
+    <div class="basic-wrap ">
+        <div class="basic-contain">
+            <ul class="basic-list cf">
+
+                <li class="stock_code">证券代码:</li>
+                <li class="stock_name">证券简称:</li>
+
+                <!-- content 1-1,1-2 resp begin -->
+                <li class="stock_code resp">600420.SH</li>
+                <li class="stock_name resp">现代制药</li>
+                <!-- content resp end -->
+
+                <li class="industry">所属企业名称:</li>
+
+                <!-- content 1-3 resp begin -->
+                <li class="industry resp">原料药</li>
+                <!--content resp end-->
+
+                <li class="basic_place">城市:</li>
+
+                <!--content 1-4 resp begin-->
+                <li class="basic_place resp">上海</li>
+                <!--content resp end-->
+
+            </ul>
+
+            <ul class="basic-list cf"  id="content-list1">
+
+                <!--content 1-1~1-4 unresp begin-->
+                <li class="stock_code">600420.SH</li>
+                <li class="stock_name">现代制药</li>
+                <li class="industry">上海现代制药股份有限公司</li>
+                <li class="basic_place">上海</li>
+                <!--content unresp end-->
+
+            </ul>
+
+            <ul class="basic-list cf">
+
+
+                <li class="basic_product">主营产品名称:</li>
+
+                <!--content 2-1 resp begin -->
+                <li class="basic_product resp">原料药、制剂</li>
+                <!--content resp end-->
+
+                <li class="concept">所属概念:</li>
+
+                <!--content 2-2 resp begin -->
+                <li class="concept resp">---</li>
+                <!--content resp end-->
+
+            </ul>
+            <ul class="basic-list cf" id="content-list2">
+
+                <!--content 2-1,2-2 unresp begin-->
+                <li class="basic_product">原料药、制剂</li>
+                <li class="concept">医保 ;沪港通概念 ;券商重仓</li>
+                <!--content unresp end-->
+
+            </ul>
+        </div>
+    </div>
+    <!-- basic end -->
+
+    <!-- form begin -->
+    <div class="form-wrap cf">
+        <div class="demo">
+            <form action="" class="cf">
+                <table style="display:none">
+                    <caption>企业息税前利润增长率</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">2010</th>
+                            <th scope="col">2011</th>
+                            <th scope="col">2012</th>
+                            <th scope="col">2013</th>
+                            <th scope="col">2014</th>
+                            <th scope="col">201503</th>
+                            <th scope="col">201506</th>
+                            <th scope="col">201509</th>
+                            <th scope="col">pre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18%</td>
+                            <td>13%</td>
+                            <td>14%</td>
+                            <td>18%</td>
+                            <td>45%</td>
+                            <td>36%</td>
+                            <td>46%</td>
+                            <td>22%</td>
+                            <td id="ebit-pre">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="intro">请预估企业2016到2020年的平均息税前利润增长率(EBIT)</div>
+
+                <div class="input">
+                    <span class="val-left">-100%</span>
+
+
+                    <input type="range" id="ebit" name="1" min="-100" value="0" step="1" max="100">
+
+
+                    <span class="val-right">100%</span>
+                </div>
+                <table style="display:none">
+                    <caption>企业营运资本增加额年增率</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">2010</th>
+                            <th scope="col">2011</th>
+                            <th scope="col">2012</th>
+                            <th scope="col">2013</th>
+                            <th scope="col">2014</th>
+                            <th scope="col">201503</th>
+                            <th scope="col">201506</th>
+                            <th scope="col">201509</th>
+                            <th scope="col">pre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>28%</td>
+                            <td>13%</td>
+                            <td>64%</td>
+                            <td>-129%</td>
+                            <td>-681</td>
+                            <td>76%</td>
+                            <td>-90%</td>
+                            <td>-185%</td>
+                            <td id="yunying-pre">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <div class="intro">请您预估企业2015到2019的营运资本增加额年增率</div>
+
+                <div class="input">
+                    <span class="val-left">-100%</span>
+
+                    <input type="range" id="yunying" name="2" min="-100" value="0" step="1" max="100">
+
+                    <span class="val-right">100%</span>
+                </div>
+
+                <button type="submit">提交并进行预测&nbsp;<i class="fa fa-line-chart"></i></button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- form end -->
+
+<!-- footer begin -->
+<div class="banner-caption-foot">
+    <div class="footer cf">
+        <ul class="ft-left cf">
+            <li><a href="">常见问题</a></li>
+            <li>|</li>
+            <li><a href="">关于</a></li>
+            <li>|</li>
+            <li><a href="stocklist2.html">股票列表</a></li>
+        </ul>
+        <ul class="ft-right cf">
+            <li><a href="">版权信息</a></li>
+            <li>|</li>
+            <li><a href="">备案信息</a></li>
+        </ul>
+    </div>
+</div>
+
+    <script type="text/javascript" src="script/sync.js"></script>
+    <script type="text/javascript" src="script/sync2.js"></script>
+
+</body>
+</html>

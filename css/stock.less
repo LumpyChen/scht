@@ -1,0 +1,702 @@
+/* Typography
+Include: font-family, font-size, color */
+
+@mainColor:#AB3B3A;
+@lightColor : #bf4140;
+@animate:all 0.3s ease-in-out;
+@darkColor :rgb(64,63,68);
+@grayColor:rgb(221,221,221);
+
+
+html, body {
+  font-family: '微软雅黑', Tahoma;
+  font-size: 15px;
+  line-height: 1.50;
+
+  color: #000000;
+  background-color: @grayColor;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+}
+ul,ol,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h6 {
+  font-weight: 700;
+}
+h1 span, h2 span, h3 span, h4 span {
+  color: #339BEB;
+}
+.text-colored {
+  color: @mainColor;
+}
+a {
+  color: @mainColor;
+  text-decoration: none!important;
+}
+a:hover{
+  text-decoration: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+.large {
+  font-size: 18px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* The perfect clearfix
+----------------------------------------------------------------------------- */
+
+.cf:before,.cf:after {
+
+  content:"";
+
+  display:table;
+
+}
+
+.cf:after { clear:both; }/* For IE 6/7 (trigger hasLayout) */
+
+.cf { zoom:1; }
+
+
+/* Header without Bootstrap
+----------------------------------------------------------------------------- */
+@media (min-width: 800px) {
+  .header {
+    color: #000000;
+    padding: 0;
+    background-color: @grayColor;
+    transition: @animate;
+    top: 0;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    z-index: 1030;
+    .logo {
+      float: left;
+      width: 50%;
+      transition: @animate;
+      img {
+        height: 50px;
+      }
+
+    }
+    .logo:hover {
+      opacity: 0.7;
+    }
+
+    .login {
+      width: 50%;
+      float: left;
+      .search {
+        width: 50%;
+        float: left;
+        height: 50px;
+        line-height: 46px;
+
+        input {
+          height: 26px;
+          border-radius: 13px 0px 0px 13px;
+          border: none;
+          width: 80%;
+          display: inline-block;
+          padding: 0 0 0 5%;
+          font-size: 12px;
+          font-weight: bolder;
+        }
+        button {
+          height: 26px;
+          border-radius: 0px 13px 13px 0px;
+          border: none;
+          width: 15%;
+          background-color: @mainColor;
+          color: #ffffff;
+          padding: 0px;
+          display: inline-block;
+          font-size: 12px;
+          font-weight: bolder;
+        }
+
+      }
+      .login-right {
+        float: right;
+        width: 45%;
+        margin-right: 5px;
+        li {
+          float: right;
+          height: 50px;
+          width: 50%;
+          text-align: center;
+          a {
+            color: @mainColor;
+            font-size: 18px;
+            font-weight: bolder;
+            line-height: 50px;
+            transition: @animate;
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: none;
+            opacity: 0.7;
+          }
+
+        }
+        li:first-child a {
+          padding-right: 60px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    color: #000000;
+    padding: 0;
+    background-color: @grayColor;
+    transition: @animate;
+    top: 0;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    z-index: 1030;
+    .logo {
+      float: left;
+      width: 100%;
+      transition: @animate;
+      text-align: center;
+      margin: 0 auto;
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        img {
+          height: 40px;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .logo:hover {
+      opacity: 0.7;
+    }
+
+    .login {
+      width: 100%;
+      float: left;
+      .search {
+        width: 70%;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+
+        input {
+          height: 26px;
+          border-radius: 13px 0px 0px 13px;
+          border: none;
+          width: 80%;
+          display: inline-block;
+          padding: 0 0 0 5%;
+          font-size: 12px;
+          font-weight: bolder;
+        }
+        button {
+          height: 26px;
+          border-radius: 0px 13px 13px 0px;
+          border: none;
+          width: 15%;
+          background-color: @mainColor;
+          color: #ffffff;
+          padding: 0px;
+          display: inline-block;
+          font-size: 12px;
+          font-weight: bolder;
+        }
+
+      }
+      .login-right {
+        width: 70%;
+        margin:0 auto;
+        li {
+          float: right;
+          height: 50px;
+          width: 50%;
+          text-align: center;
+          a {
+            color: @mainColor;
+            font-size: 18px;
+            font-weight: bolder;
+            line-height: 40px;
+            transition: @animate;
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: none;
+            opacity: 0.7;
+          }
+
+        }
+        li:first-child a {
+          padding-right: 60px;
+        }
+      }
+    }
+  }
+}
+
+/* Title
+----------------------------------------------------------------------------- */
+@media (min-width: 900px) {
+  .title-set{
+    overflow: hidden;
+    background-color: @grayColor;
+    .title-bg{
+      background: url("../images/title-bg.png");
+      height: 150px;
+      width: e("calc(100% - 30px)");
+      margin: 0px auto 15px auto;
+      overflow: hidden;
+      .title-name{
+        color: #ffffff;
+        background-color: @mainColor;
+        height: 70px;
+        display: inline-block;
+        line-height: 70px;
+        font-size: 30px;
+        margin-left: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 40px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .title-set{
+    overflow: hidden;
+    background-color: @grayColor;
+    .title-bg{
+      background: url("../images/title-bg.png");
+      height: 70px;
+      width: e("calc(100% - 30px)");
+      margin: 0px auto 15px auto;
+      overflow: hidden;
+      .title-name{
+        color: #ffffff;
+        background-color: @mainColor;
+        width: 45%;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        margin:10px auto;
+        font-size: 18px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+
+/* Basic
+----------------------------------------------------------------------------- */
+@media(min-width: 550px) {
+  .basic-wrap {
+    background-color: @grayColor;
+    color: #ffffff;
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    .basic-contain {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      background-color: @mainColor;
+      .basic-list {
+        li {
+          float: left;
+          text-align: center;
+          border-bottom: 2px #FFFFFF solid;
+          border-right: 2px #ffffff solid;
+          margin-right: -1px;
+          margin-left: -1px;
+          height: 30px;
+          line-height: 30px;
+
+        }
+        .resp{
+          display: none;
+        }
+        .stock_code {
+          width: 16%;
+        }
+        .stock_name {
+          width: 20%;
+        }
+        .industry {
+          width: 54%;
+        }
+        .basic_place {
+          width: 10%;
+        }
+        .basic_product {
+          width: 60%;
+        }
+        .concept {
+          width: 40%;
+        }
+      }
+      #content-list1, #content-list2 {
+        background-color: @darkColor;
+      }
+    }
+
+  }
+}
+@media(max-width: 550px) {
+  .basic-wrap {
+    background-color: @grayColor;
+    color: #ffffff;
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    .basic-contain {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      background-color: @mainColor;
+      .basic-list {
+        li {
+          float: left;
+          text-align: center;
+          border-bottom: 2px #FFFFFF solid;
+          border-right: 2px #ffffff solid;
+          margin-right: -1px;
+          margin-left: -1px;
+          height: 30px;
+          line-height: 30px;
+
+        }
+        .resp{
+          background-color: @darkColor;
+        }
+        .stock_code {
+          width: 50%;
+        }
+        .stock_name {
+          width: 50%;
+        }
+        .industry {
+          width: 100%;
+        }
+        .basic_place {
+          width: 100%;
+        }
+        .basic_product {
+          width: 100%;
+        }
+        .concept {
+          width: 100%;
+        }
+      }
+      #content-list1, #content-list2 {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Form
+----------------------------------------------------------------------------- */
+@media (min-width: 800px) {
+  .form-wrap{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: @darkColor;
+    color: #FFFFFF;
+    overflow: hidden;
+    .demo{
+      margin: 0 auto;
+      width: 100%;
+      form {
+
+        .visualize, .visualize-line {
+          width: 45%;
+          border: 0px;
+          margin: 30px auto 30px auto;
+        }
+        .intro {
+          text-align: center;
+          color: #ffffff;
+          margin: 50px auto 20px auto !important;
+          width: 80%;
+          font-size: 16px;
+        }
+        .input{
+          text-align: center;
+          span{
+            position: relative;
+            bottom: 3px;
+          }
+        }
+        button{
+          border: none;
+          padding: 10px 20px;
+          margin: 40px auto;
+          display: block;
+          background-color: @mainColor;
+          color: #ffffff;
+          font-size: 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .form-wrap{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: @darkColor;
+    color: #FFFFFF;
+    overflow: hidden;
+    .demo{
+      margin: 0 auto;
+      width: 100%;
+      form {
+
+        .visualize, .visualize-line {
+          width: 45%;
+          border: 0px;
+          margin: 30px auto 30px auto;
+        }
+        .intro {
+          text-align: center;
+          color: #ffffff;
+          margin: 50px auto 20px auto !important;
+          width: 80%;
+          font-size: 16px;
+        }
+        .input{
+          text-align: center;
+          span{
+            position: relative;
+            bottom: 3px;
+          }
+        }
+        button{
+          border: none;
+          padding: 10px 20px;
+          margin: 40px auto;
+          display: block;
+          background-color: @mainColor;
+          color: #ffffff;
+          font-size: 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+/* Footer without Bootstrap
+----------------------------------------------------------------------------- */
+
+
+@media (min-width: 500px) {
+  .banner-caption-foot {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 4;
+    background-color: rgb(0, 0, 0);
+    content: "";
+
+    .ft-left {
+      margin-left: 70px;
+      float: left;
+
+      li {
+        float: left;
+        list-style: none;
+        line-height: 40px;
+        margin-right: 12px;
+        color: #ffffff;
+        a {
+          color: #ffffff;
+          transition: @animate;
+
+        }
+        a:hover {
+          text-decoration: none;
+          color: @mainColor;
+        }
+      }
+    }
+
+    .ft-right {
+      margin-right: 40px;
+      float: right;
+      li {
+        float: right;
+        list-style: none;
+        line-height: 40px;
+        margin-left: 12px;
+        color: #ffffff;
+        a {
+          color: #ffffff;
+          transition: @animate;
+        }
+        a:hover {
+          text-decoration: none;
+          color: @mainColor;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-caption-foot{
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    font-size: 10px;
+    .ft-left {
+      text-align:center;
+      width:80%;
+      margin: 0 auto;
+      li:nth-child(2n+1){
+        width:25%;
+        float: left;
+        list-style: none;
+        line-height: 20px;
+
+        a {
+          color: #ffffff;
+          transition: @animate;
+
+        }
+        a:hover {
+          text-decoration: none;
+          color: @mainColor;
+        }
+      }
+      li:nth-child(2n){
+        width:12.5%;
+        float: left;
+        list-style: none;
+        line-height: 20px;
+
+        a {
+          color: #ffffff;
+          transition: @animate;
+
+        }
+        a:hover {
+          text-decoration: none;
+          color: @mainColor;
+        }
+      }
+    }
+
+    .ft-right {
+      float: right;
+      width: 80%;
+      margin: 0 auto;
+      li:nth-child(2n+1) {
+        float: right;
+        list-style: none;
+        line-height: 20px;
+        width: 40%;
+        a {
+          color: #ffffff;
+          transition: @animate;
+        }
+        a:hover {
+          text-decoration: none;
+          color: @mainColor;
+        }
+      }
+      li:nth-child(2n) {
+        float: right;
+        list-style: none;
+        line-height: 20px;
+        width: 20%;
+        a {
+          color: #ffffff;
+          transition: @animate;
+        }
+        a:hover {
+          text-decoration: none;
+          color: @mainColor;
+        }
+      }
+    }
+  }
+}
+
+/* Stocklist without Bootstrap
+----------------------------------------------------------------------------- */

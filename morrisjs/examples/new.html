@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="morris.css">
+ <script src="jquery.min.js"></script>
+ <script src="raphael-min.js"></script>
+ <script src="morris.js"></script>
+  
+</head>
+<html>
+<div id="EBIT-his" style="height: 250px;"></div>
+<script>
+new Morris.Line({
+  element: 'EBIT-his',
+  // the chart.
+  data: [
+    { year: '2010', value: 20 },
+    { year: '2011', value: -10 },
+    { year: '2012', value: 5 },
+    { year: '2013', value: 5 },
+    { year: '2015.3', value: 3 },
+    { year: '2015.6', value: 1 },
+    { year: '2015.9', value: 5 },
+  ],
+  // The name of the data record attribute that contains x-values.
+  xkey: 'year',
+  // A list of names of data record attributes that contain y-values.
+  ykeys: ['value'],
+  // Labels for the ykeys -- will be displayed when you hover over the
+  // chart.
+  labels: ['Value']
+});
+	</script>
+
+</html>

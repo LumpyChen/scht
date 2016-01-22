@@ -13,6 +13,11 @@
 		<!-- Self Adaption -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 
+		<!--[if lt ie 9]>
+			<script src="http://oss.maxcdn/libs/html5shiv/3.7.0/html5shiv.js>"
+			<script src="http://oss.maxcdn/libs/respond.js/1.4.2/respond.min.js">
+		<![endif]-->
+
 		<!-- Favicon -->
 		<link rel="icon" href="images/favicon.png">
 
@@ -28,57 +33,31 @@
 
 	<body>
 		<!-- header start -->
-		<!-- ================ --> 
-		<header class="header fixed clearfix navbar navbar-fixed-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 logo" >
-						<a href="index.html">
-							<img src="images/scht.png" alt="">
-						</a>
-					</div>
-					<div class="col-md-8">
-						<!-- header-right start -->
-						<!-- ================ -->
-						<div class="header-right clearfix">
-							<!-- main-navigation start -->
-							<!-- ================ -->
-							<div class="main-navigation">
-								<!-- navbar start -->
-								<!-- ================ -->
-								<nav class="navbar navbar-default" role="navigation">
-									<div class="container-fluid">
-										<!-- Toggle get grouped for better mobile display -->
-										<div class="navbar-header">
-											<button type="button" class="navbar-toggle btn-addon" data-toggle="collapse" data-target="#navbar-collapse-1">
-												<span class="sr-only">Toggle navigation</span>
-												<span class="">导航</span>
-												
-											</button>
-										</div>
+		<header class="header cf">
 
-										<!-- Collect the nav links, forms, and other content for toggling -->
-										<div class="collapse navbar-collapse" id="navbar-collapse-1">
-											<ul class="nav navbar-nav navbar-right">
-												<li><a href="#">登陆</a></li>
-												<li><a href="#">注册</a></li>
-											</ul>
-										</div>
-									</div>
-								</nav>
-								<!-- navbar end -->
-							</div>
-							<!-- main-navigation end -->
-						</div>
-						<!-- header-right end -->
-					</div>
-				</div>
+			<div class="logo" >
+
+				<a href="index.html">
+					<img src="images/scht.png" alt="">
+				</a>
+
 			</div>
+
+			<div class="login">
+
+						<ul class="login-right cf">
+
+							<li><a href="#">登陆&nbsp;<i class="fa fa-user"></i> </a></li>
+							<li><a href="#">注册&nbsp;<i class="fa fa-users"></i> </a></li>
+
+						</ul>
+
+			</div>
+
 		</header>
 		<!-- header end -->
 
 		<!-- banner start -->
-		<!-- ================ -->
 		<div id="banner" class="banner">
 			<div class="banner-image"></div>
 			<div class="banner-caption-middle"></div>
@@ -93,7 +72,7 @@
 									<div class="col-md-8 col-md-offset-2 input-group input-group-lg">
 										<input type="text" class="form-control" placeholder="请输入您想了解的股票代码或简称...">
 										<span class="input-group-btn">
-											<button class="btn search-btn" type="button">搜索</button>
+											<button class="btn search-btn" type="button">搜索&nbsp;<i class="fa fa-search"></i></button>
 										</span>
 									</div>
 								</form>
@@ -102,21 +81,25 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="banner-caption-foot">
-				<div class="container">
-					<div class="row">
-							<ul class="ft-left">
+					<div class="footer cf">
+							<ul class="ft-left cf">
 								<li><a href="">常见问题</a></li>
+								<li>|</li>
 								<li><a href="">关于</a></li>
-								<li><a href="">股票列表</a></li>
+								<li>|</li>
+								<li><a href="stocklist2.html">股票列表</a></li>
 							</ul>
-							<ul class="ft-right">
+							<ul class="ft-right cf">
 								<li><a href="">版权信息</a></li>
+								<li>|</li>
 								<li><a href="">备案信息</a></li>
 							</ul>
 					</div>
-				</div>
 			</div>
+
+
 		</div>
 		<!-- banner end -->
 
@@ -125,6 +108,7 @@
 		================================================== -->
 		<!-- Jquery and Bootstap core js files -->
 		<script type="text/javascript" src="build/bundle.js"></script>
+		<script src="script/"></script>
 
 		<!-- Modernizr, JQbased-Backstretch javascript and Main script-->
 
